@@ -60,6 +60,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'sample/templates'),
+            os.path.join(BASE_DIR, 'ldap/templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
