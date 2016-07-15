@@ -130,3 +130,6 @@ LDAP_USER_BASEDN = local_settings.LDAP_USER_BASEDN
 AUTHENTICATION_BACKENDS = (
     'ldap.backend.LDAPBackend',
 )
+
+LOGIN_REDIRECT_URL = '/sample/'
+LOGIN_URL = '/login/'
