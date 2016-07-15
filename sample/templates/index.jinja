@@ -1,6 +1,10 @@
 {% extends "base.jinja" %}
 
 {% block content %}
+  {% if user.is_authenticated %}
+    <p>Current User:{{ user.username }}</p>
+  {% endif %}
+
   {% if distribution == 'arch' %}
     <h1>Arch Linux</h1>
   {% elif distribution == 'debian' %}
